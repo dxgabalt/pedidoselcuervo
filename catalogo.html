@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo de estilos CSS -->
+    <title>Catálogo</title>
+    <link rel="icon" href="logo2.png">
+    <style>
+        /* Estilos CSS específicos para la página "catalogo.html" */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .category {
+            margin-top: 20px;
+        }
+
+        .category h2 {
+            color: #660099;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+        }
+
+        /* Otros estilos específicos según tus preferencias */
+    </style>
+    <title>Catálogo de Productos</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="logo2.png" alt="Logo de Pedidos El Cuervo">
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="categories">
+        <div class="container">
+            <h2>Entradas</h2>
+            <!-- Listado de productos de la categoría "Entradas" -->
+            <div class="product">
+                <img src="entrada1.jpg" alt="Entrada 1">
+                <p>Descripción de la entrada 1.</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <!-- Repite la estructura para otros productos de la categoría -->
+        </div>
+
+        <section id="category">
+            <div class="container">
+                <div class="category">
+                    <h2>Platos Principales</h2>
+                    <!-- Listado de productos de la categoría "Platos Principales" -->
+                    <!-- Repite la estructura para otros productos de la categoría -->
+                    <div class="product">
+                        <img src="plato1.jpg" alt="Plato Principal 1">
+                        <h3>Nombre del Plato</h3>
+                        <p>Descripción del plato. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <span class="price">$10.99</span>
+                        <button class="add-to-cart">Agregar al Carrito</button>
+                    </div>
+        
+                    <!-- Repite la estructura para otros productos de la categoría -->
+                </div>
+        
+                <!-- Repite la estructura para otras categorías -->
+            </div>
+        </section>
+        
+        <section id="filters">
+            <div class="container">
+                <!-- Opciones para filtrar por tipo de cocina (local, internacional, etc.) -->
+                <label for="cuisine">Filtrar por Tipo de Cocina:</label>
+                <select id="cuisine" name="cuisine">
+                    <option value="local">Local</option>
+                    <option value="internacional">Internacional</option>
+                    <option value="vegetariana">Vegetariana</option>
+                    <option value="vegana">Vegana</option>
+                </select>
+            </div>
+        </section>
+        
+        <section id="cart">
+            <div class="container">
+                <!-- Mostrar el contenido del carrito de compras -->
+                <h2>Carrito de Compras</h2>
+                <ul class="cart-items">
+                    <!-- Aquí se mostrarán los productos en el carrito -->
+                </ul>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-price">$0.00</span>
+                </div>
+                <button class="checkout">Pagar</button>
+            </div>
+        </section>
+        
+
+
+    <footer>
+        <p>&copy; 2023 Pedidos El Cuervo</p>
+    </footer>
+</body>
+</html>
